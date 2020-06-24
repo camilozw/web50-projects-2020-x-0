@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Admival</title>
+</head>
+
+<body>
+    <img src="Logo cuadrado Admival.png" alt="Logo Admival" style="width: 25%;">
+
+    <h1>Control Juntas Directivas</h1>
+
+    <p>Control de Juntas Directivas y su composición.</p>
+    
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-5" style="background-color:lightcoral;">No Tiene JD<br>XX%</div>
+          <div class="col-sm-5" style="background-color:turquoise;">Si tiene JD<br>YY%</div>
+          <div class="col-sm-2" style="background-color:lavender;">No. miembros<br>ZZ%</div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="container">
+        <h2>Detalle Juntas Directivas</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Empresa</th>
+              <th>No. de miembros</th>
+              <th>Principales</th>
+              <th>Suplentes</th>
+              <th>No. última acta</th>
+              <th>Fecha última acta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Empresa 1</td>
+              <td>7</td>
+              <td>Carlos, Ana, Maria, Camilo, Juan, John, Fredy</td>
+              <td>Pedro, Mario, Ivan, Jorge, Patricia, Sandra, Gustavo</td>
+              <td>20</td>
+              <td>2019-03-05</td>
+            </tr>
+            <tr>
+              <td>Empresa 2</td>
+              <td>3</td>
+              <td>Ppal 1, Ppal 2, Ppal 3</td>
+              <td>Supl 1, Supl 2, Supl 3</td>
+              <td>10</td>
+              <td>2020-03-10</td>
+            </tr>
+            <tr>
+              <td>Empresa 3</td>
+              <td>3</td>
+              <td>Ppal 1, Ppal 2, Ppal 3</td>
+              <td>Supl 1, Supl 2, Supl 3</td>
+              <td>15</td>
+              <td>2020-06-12</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+</body>
+
+<footer style="text-align-last: center;">
+    <button type="button" onclick="window.location.href='index.html';" class="button btn-success">Home Controles</button>
+    <button type="button" onclick="window.location.href='ContEstadoEmp.html';" class="button btn-success">Act / Inact</button>
+    <button type="button" onclick="window.location.href='ContAccesos.html';" class="button btn-success">Accesos</button>
+    <button type="button" onclick="window.location.href='ContJD.html';" class="button btn-success">JD</button>
+</footer>
+
+</html>

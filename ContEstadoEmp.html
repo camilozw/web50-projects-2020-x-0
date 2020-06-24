@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Admival</title>
+    <style>
+        .item1 { grid-area: header; }
+        .item2 { grid-area: left; }
+        .item3 { grid-area: center; }
+        .item4 { grid-area: right; }
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            'header header header header header header'
+            'left left center center right right'
+            'left left center center right right';
+          grid-gap: 1px;
+          background-color: #2196F3;
+          padding: 1px;
+          text-align-last: center;
+        }
+        
+        .grid-container > div {
+          background-color: rgba(255, 255, 255, 0.8);
+          text-align: left;
+          padding: 20px 0;
+          font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <img src="Logo cuadrado Admival.png" alt="Logo Admival" style="width: 25%;">
+
+    <h1>Estado empresas</h1>
+
+    <p>Estado de las empresas de acuerdo al avance operativo y/o contractual con cadda una de ellas.</p>
+
+    <div class="grid-container">
+        <div class="item1">Control estado empresas</div>
+        <div class="item2">Activas:<br>XX%</div>
+        <div class="item3">Temp. Inact.:<br>YY%</div>  
+        <div class="item4">Inactivas:<br>ZZ%</div>
+    </div>
+</body>
+
+<footer style="text-align-last: center;">
+  <button type="button" onclick="window.location.href='index.html';" class="button btn-success">Home Controles</button>
+  <button type="button" onclick="window.location.href='ContEstadoEmp.html';" class="button btn-success">Act / Inact</button>
+  <button type="button" onclick="window.location.href='ContAccesos.html';" class="button btn-success">Accesos</button>
+  <button type="button" onclick="window.location.href='ContJD.html';" class="button btn-success">JD</button>
+</footer>
+
+</html>
